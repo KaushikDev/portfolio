@@ -1,0 +1,194 @@
+@import "config";
+
+.error {
+  background: url("../../../images/errorBG.svg") no-repeat fixed center;
+  background-size: cover;
+  padding: $sm;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: $md;
+  }
+}
+
+//Media Queries
+//Old phones
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .error {
+    background: url("../../../images/errorBG_phones.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $mdsm;
+    }
+  }
+}
+//new phones portrait
+@media screen and (min-width: 480px) and (max-width: 640px) and (orientation: portrait) {
+  .error {
+    background: url("../../../images/errorBG_phones.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $mdsm;
+    }
+  }
+}
+//new phones landscape
+@media screen and (min-width: 480px) and (max-width: 640px) and (orientation: landscape) {
+  .error {
+    background: url("../../../images/errorBG_phonesL.svg") no-repeat fixed
+      center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $mdsm;
+    }
+  }
+}
+//mini tablets portrait
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: portrait) {
+  .error {
+    background: url("../../../images/errorBG_phones.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//mini tablets landscape
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: landscape) {
+  .error {
+    background: url("../../../images/errorBG_phonesL.svg") no-repeat fixed
+      center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//tablets portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .error {
+    background: url("../../../images/errorBG_tablets.svg") no-repeat fixed
+      center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//tablets landscape
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .error {
+    background: url("../../../images/errorBG_web.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//laptops and desktops-Full HD
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .error {
+    background: url("../../../images/errorBG_web.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//laptops and desktops-Full HD
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+}
+//laptops and desktops-2k
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .error {
+    background: url("../../../images/errorBG.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}
+//laptops and desktops-4k
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+  .error {
+    background: url("../../../images/errorBG.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: $md;
+    }
+  }
+}

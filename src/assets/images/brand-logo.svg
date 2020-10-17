@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <filter id="KAUSHIK" x="35.5" y="218.5" width="540" height="156" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="DEV" x="297.5" y="297.5" width="229" height="161" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_17" data-name="Group 17" transform="translate(-615 -108)">
+    <g id="Group_16" data-name="Group 16">
+      <g id="Group_15" data-name="Group 15">
+        <g id="Group_14" data-name="Group 14">
+          <g id="Group_13" data-name="Group 13">
+            <g id="Group_12" data-name="Group 12">
+              <g id="Group_11" data-name="Group 11">
+                <g id="Group_10" data-name="Group 10">
+                  <g id="Group_7" data-name="Group 7" transform="translate(-9 -13)">
+                    <g id="Group_6" data-name="Group 6">
+                      <g id="Group_5" data-name="Group 5">
+                        <g id="Group_4" data-name="Group 4">
+                          <g id="Group_3" data-name="Group 3">
+                            <g id="Group_2" data-name="Group 2" transform="translate(-24)">
+                              <circle id="Ellipse_1" data-name="Ellipse 1" cx="300" cy="300" r="300" transform="translate(648 121)" fill="#fff"/>
+                              <circle id="Ellipse_2" data-name="Ellipse 2" cx="275" cy="275" r="275" transform="translate(673 146)"/>
+                              <g transform="matrix(1, 0, 0, 1, 648, 121)" filter="url(#KAUSHIK)">
+                                <text id="KAUSHIK-2" data-name="KAUSHIK" transform="translate(38 221)" fill="#fff" font-size="116" font-family="Calibri-Bold, Calibri" font-weight="700"><tspan x="47.577" y="110">KAUSHIK</tspan></text>
+                              </g>
+                              <g transform="matrix(1, 0, 0, 1, 648, 121)" filter="url(#DEV)">
+                                <text id="DEV-2" data-name="DEV" transform="translate(403 414)" fill="#707070" font-size="120" font-family="Calibri-BoldItalic, Calibri" font-weight="700" font-style="italic"><tspan x="-102.568" y="0">DEV</tspan></text>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+@font-face {
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+  font-family: "Montserrat";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,301 @@
+@import "config";
+.home {
+  background: url("../../../images/homeBG.svg") no-repeat fixed center;
+  background-size: cover;
+  padding: $sm;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  #intro__para1 {
+    font-size: $xxlg;
+    color: $accent;
+    opacity: 0;
+    animation: p1 1s linear 0.25s 1 forwards;
+  }
+  #intro__para2 {
+    font-size: $xlg;
+    color: $accent;
+    opacity: 0;
+    animation: p2 1s linear 0.75s 1 forwards;
+
+    span {
+      font-size: $xlg;
+      color: $accent;
+      text-shadow: 1px 1px 2px $base;
+    }
+  }
+  #intro__para3 {
+    font-size: $lg;
+    color: $accent;
+    opacity: 0;
+    animation: p3 1s linear 1.25s 1 forwards;
+    span {
+      font-size: $lg;
+      color: $accent;
+      text-shadow: 1px 1px 2px $base;
+    }
+  }
+
+  @keyframes p1 {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes p2 {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes p3 {
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+//Media Queries
+//Old phones
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .home {
+    background: url("../../../images/homeBG_phones.svg") no-repeat fixed center; //change this
+    background-size: cover;
+    padding: $mn;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    #intro__para1 {
+      font-size: $xlg;
+      color: $accent;
+      opacity: 0;
+      animation: p1 1s linear 0.25s 1 forwards;
+    }
+    #intro__para2 {
+      font-size: $lg;
+      color: $accent;
+      opacity: 0;
+      animation: p2 1s linear 0.75s 1 forwards;
+
+      span {
+        font-size: $lg;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+    #intro__para3 {
+      font-size: $md;
+      color: $accent;
+      opacity: 0;
+      animation: p3 1s linear 1.25s 1 forwards;
+      span {
+        font-size: $md;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+  }
+}
+//new phones portrait
+@media screen and (min-width: 480px) and (max-width: 640px) and (orientation: portrait) {
+  .home {
+    background: url("../../../images/homeBG_phones.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    #intro__para1 {
+      font-size: $xlg;
+      color: $accent;
+      opacity: 0;
+      animation: p1 1s linear 0.25s 1 forwards;
+    }
+    #intro__para2 {
+      font-size: $lg;
+      color: $accent;
+      opacity: 0;
+      animation: p2 1s linear 0.75s 1 forwards;
+
+      span {
+        font-size: $lg;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+    #intro__para3 {
+      font-size: $md;
+      color: $accent;
+      opacity: 0;
+      animation: p3 1s linear 1.25s 1 forwards;
+      span {
+        font-size: $md;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+  }
+}
+//new phones landscape
+@media screen and (min-width: 480px) and (max-width: 640px) and (orientation: landscape) {
+  .home {
+    background: url("../../../images/homeBG_phonesL.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    #intro__para1 {
+      font-size: $xlg;
+      color: $accent;
+      opacity: 0;
+      animation: p1 1s linear 0.25s 1 forwards;
+    }
+    #intro__para2 {
+      font-size: $lg;
+      color: $accent;
+      opacity: 0;
+      animation: p2 1s linear 0.75s 1 forwards;
+
+      span {
+        font-size: $lg;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+    #intro__para3 {
+      font-size: $md;
+      color: $accent;
+      opacity: 0;
+      animation: p3 1s linear 1.25s 1 forwards;
+      span {
+        font-size: $md;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+  }
+}
+//mini tablets portrait
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: portrait) {
+  .home {
+    background: url("../../../images/homeBG_phones.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    #intro__para1 {
+      font-size: $xlg;
+      color: $accent;
+      opacity: 0;
+      animation: p1 1s linear 0.25s 1 forwards;
+    }
+    #intro__para2 {
+      font-size: $lg;
+      color: $accent;
+      opacity: 0;
+      animation: p2 1s linear 0.75s 1 forwards;
+
+      span {
+        font-size: $lg;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+    #intro__para3 {
+      font-size: $md;
+      color: $accent;
+      opacity: 0;
+      animation: p3 1s linear 1.25s 1 forwards;
+      span {
+        font-size: $md;
+        color: $accent;
+        text-shadow: 1px 1px 2px $base;
+      }
+    }
+  }
+}
+//mini tablets landscape
+@media screen and (min-width: 640px) and (max-width: 768px) and (orientation: landscape) {
+  .home {
+    background: url("../../../images/homeBG_phonesL.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+//tablets portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .home {
+    background: url("../../../images/homeBG_tablets.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+//tablets landscape
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .home {
+    background: url("../../../images/homeBG_web.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+//laptops and desktops-Full HD
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .home {
+    background: url("../../../images/homeBG_web.svg") no-repeat fixed center;
+    background-size: cover;
+    padding: $sm;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+//laptops and desktops-Full HD
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+}
+//laptops and desktops-2k
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+}
+//laptops and desktops-4k
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+}

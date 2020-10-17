@@ -1,0 +1,52 @@
+@font-face {
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+  font-family: "Montserrat";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.togglemenu {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.togglemenu .fa {
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  .togglemenu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .togglemenu .fa {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .togglemenu {
+    width: 50%;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .togglemenu .fa {
+    font-size: 3rem;
+    color: #fff;
+  }
+}

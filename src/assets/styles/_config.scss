@@ -1,0 +1,33 @@
+@font-face {
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+  font-family: "Montserrat";
+}
+
+//+++Global Variables+++
+
+//---Colors---
+$base: #119da4;
+$accent: #0a1826;
+$primary: #eee;
+$secondary: #555;
+$tertiary: #fff;
+
+//---Sizes---
+$xxlg: 5rem;
+$xlg: 3rem;
+$lg: 2rem;
+$md: 1.5rem;
+$mdsm: 1.1rem;
+$sm: 1rem;
+$xsm: 0.9rem;
+$mn: 0.5rem;
+$mc: 0.25rem;
+$nn: 0.1rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: $xsm;
+}
