@@ -31,7 +31,7 @@ const projectsList = [
     tag: "Javascript",
   },
   {
-    projectLink: "https://kaushikdev.github.io/quote",
+    projectLink: "https://kaushikdev.github.io/quotes",
     projectTitle: "Quotes",
     tag: "Javascript",
   },
