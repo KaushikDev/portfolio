@@ -6,9 +6,9 @@ import "../../assets/styles/dist/css/projects.css";
 
 const projectsList = [
   {
-    projectLink: "https://kaushikdev.github.io/budget",
+    projectLink: "https://kaushikdev.github.io/budget-manager",
     projectTitle: "Budget Manager",
-    tag: "Javascript",
+    tag: "React",
   },
   {
     projectLink: "https://kaushikdev.github.io/blog",
