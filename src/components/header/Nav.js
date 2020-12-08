@@ -7,37 +7,47 @@ import Brand from "./Brand";
 import "../../assets/styles/dist/css/nav.css";
 
 const Nav = () => {
-  const [showNavSocial, setShowNavSocial] = useState(false);
-
-  const toggleNavSocial = () => {
-    setShowNavSocial((prevState) => !prevState);
-  };
+  const [showSocialMenu, setShowSocialMenu] = useState(false);
+  const [showMenuIcon, setShowMenuIcon] = useState(true);
 
   if (window.innerWidth >= 768) {
     return (
       <div className="nav">
         <Brand />
-        <ToggleMenu toggleNavSocial={toggleNavSocial} />
+        <ToggleMenu />
         <Navbar />
         <Social />
       </div>
     );
   }
 
-  if (window.innerWidth < 768 && showNavSocial) {
+  if (window.innerWidth < 768 && showSocialMenu) {
     return (
       <div className="nav">
         <Brand />
-        <ToggleMenu toggleNavSocial={toggleNavSocial} />
-        <Navbar />
+        <ToggleMenu
+          setShowSocialMenu={setShowSocialMenu}
+          setShowMenuIcon={setShowMenuIcon}
+          showMenuIcon={showMenuIcon}
+        />
+        <Navbar
+          setShowSocialMenu={setShowSocialMenu}
+          setShowMenuIcon={setShowMenuIcon}
+        />
         <Social />
       </div>
     );
-  } else {
+  }
+
+  if (window.innerWidth < 768 && !showSocialMenu) {
     return (
       <div className="nav">
         <Brand />
-        <ToggleMenu toggleNavSocial={toggleNavSocial} />
+        <ToggleMenu
+          setShowSocialMenu={setShowSocialMenu}
+          setShowMenuIcon={setShowMenuIcon}
+          showMenuIcon={showMenuIcon}
+        />
       </div>
     );
   }

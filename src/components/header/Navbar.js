@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import "../../assets/styles/dist/css/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setShowSocialMenu, setShowMenuIcon }) => {
   const onSelectStyle = { color: "#119da4" };
 
   return (
@@ -15,6 +15,10 @@ const Navbar = () => {
             to={`/home`}
             exact
             activeStyle={onSelectStyle}
+            onClick={() => {
+              setShowMenuIcon(true);
+              setShowSocialMenu(false);
+            }}
           >
             HOME
           </NavLink>
@@ -25,6 +29,10 @@ const Navbar = () => {
             to={`/projects`}
             exact
             activeStyle={onSelectStyle}
+            onClick={() => {
+              setShowMenuIcon(true);
+              setShowSocialMenu(false);
+            }}
           >
             PROJECTS
           </NavLink>
@@ -35,6 +43,10 @@ const Navbar = () => {
             to={`/about`}
             exact
             activeStyle={onSelectStyle}
+            onClick={() => {
+              setShowMenuIcon(true);
+              setShowSocialMenu(false);
+            }}
           >
             ABOUT
           </NavLink>
@@ -45,6 +57,10 @@ const Navbar = () => {
             to={`/contact`}
             exact
             activeStyle={onSelectStyle}
+            onClick={() => {
+              setShowMenuIcon(true);
+              setShowSocialMenu(false);
+            }}
           >
             CONTACT
           </NavLink>

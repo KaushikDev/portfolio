@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../assets/styles/dist/css/togglemenu.css";
 
-const ToggleMenu = ({ toggleNavSocial }) => {
-  const [showMenuIcon, setShowMenuIcon] = useState(true);
-
+const ToggleMenu = ({ setShowSocialMenu, setShowMenuIcon, showMenuIcon }) => {
   return (
     <div className="togglemenu">
       {showMenuIcon ? (
@@ -13,8 +11,8 @@ const ToggleMenu = ({ toggleNavSocial }) => {
           icon={faBars}
           className="fa"
           onClick={() => {
-            setShowMenuIcon((prevState) => !prevState);
-            toggleNavSocial(true);
+            setShowMenuIcon(false);
+            setShowSocialMenu(true);
           }}
         />
       ) : (
@@ -22,8 +20,8 @@ const ToggleMenu = ({ toggleNavSocial }) => {
           icon={faTimes}
           className="fa"
           onClick={() => {
-            setShowMenuIcon((prevState) => !prevState);
-            toggleNavSocial(false);
+            setShowMenuIcon(true);
+            setShowSocialMenu(false);
           }}
         />
       )}
