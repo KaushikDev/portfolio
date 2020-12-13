@@ -16,8 +16,8 @@ const Navbar = ({ setShowSocialMenu, setShowMenuIcon }) => {
             exact
             activeStyle={onSelectStyle}
             onClick={() => {
-              setShowMenuIcon(true);
-              setShowSocialMenu(false);
+              setShowMenuIcon((prevState) => !prevState);
+              setShowSocialMenu((prevState) => !prevState);
             }}
           >
             HOME
@@ -30,8 +30,8 @@ const Navbar = ({ setShowSocialMenu, setShowMenuIcon }) => {
             exact
             activeStyle={onSelectStyle}
             onClick={() => {
-              setShowMenuIcon(true);
-              setShowSocialMenu(false);
+              setShowMenuIcon((prevState) => !prevState);
+              setShowSocialMenu((prevState) => !prevState);
             }}
           >
             PROJECTS
@@ -44,8 +44,8 @@ const Navbar = ({ setShowSocialMenu, setShowMenuIcon }) => {
             exact
             activeStyle={onSelectStyle}
             onClick={() => {
-              setShowMenuIcon(true);
-              setShowSocialMenu(false);
+              setShowMenuIcon((prevState) => !prevState);
+              setShowSocialMenu((prevState) => !prevState);
             }}
           >
             ABOUT
@@ -58,8 +58,8 @@ const Navbar = ({ setShowSocialMenu, setShowMenuIcon }) => {
             exact
             activeStyle={onSelectStyle}
             onClick={() => {
-              setShowMenuIcon(true);
-              setShowSocialMenu(false);
+              setShowMenuIcon((prevState) => !prevState);
+              setShowSocialMenu((prevState) => !prevState);
             }}
           >
             CONTACT

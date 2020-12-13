@@ -11,8 +11,8 @@ const ToggleMenu = ({ setShowSocialMenu, setShowMenuIcon, showMenuIcon }) => {
           icon={faBars}
           className="fa"
           onClick={() => {
-            setShowMenuIcon(false);
-            setShowSocialMenu(true);
+            setShowMenuIcon((prevState) => !prevState);
+            setShowSocialMenu((prevState) => !prevState);
           }}
         />
       ) : (
@@ -20,8 +20,8 @@ const ToggleMenu = ({ setShowSocialMenu, setShowMenuIcon, showMenuIcon }) => {
           icon={faTimes}
           className="fa"
           onClick={() => {
-            setShowMenuIcon(true);
-            setShowSocialMenu(false);
+            setShowMenuIcon((prevState) => !prevState);
+            setShowSocialMenu((prevState) => !prevState);
           }}
         />
       )}

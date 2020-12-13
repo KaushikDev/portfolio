@@ -15,7 +15,10 @@ const Nav = () => {
       <div className="nav">
         <Brand />
         <ToggleMenu />
-        <Navbar />
+        <Navbar
+          setShowSocialMenu={setShowSocialMenu}
+          setShowMenuIcon={setShowMenuIcon}
+        />
         <Social />
       </div>
     );
