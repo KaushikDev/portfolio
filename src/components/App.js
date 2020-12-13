@@ -14,7 +14,7 @@ import "../assets/styles/dist/css/app.css";
 const App = () => {
   return (
     <div className="app-container">
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Nav />
         <Switch>
           <Route path="/" component={Home} exact />
