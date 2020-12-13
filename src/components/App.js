@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "./header/Nav";
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import "../assets/styles/dist/css/app.css";
 const App = () => {
   return (
     <div className="app-container">
-      <BrowserRouter basename="/">
+      <HashRouter basename="/">
         <Nav />
         <Switch>
           <Route path="/" component={Home} exact />
@@ -25,7 +25,7 @@ const App = () => {
           <Route component={Error} />
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
