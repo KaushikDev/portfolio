@@ -6,7 +6,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        <span>&copy;</span> PIYUSH KAUSHIK 2020. ALL RIGHTS RESERVED.
+        <span>&copy;</span> PIYUSH KAUSHIK {new Date().getFullYear()}. ALL
+        RIGHTS RESERVED.
       </p>
     </div>
   );

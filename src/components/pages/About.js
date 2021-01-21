@@ -14,16 +14,15 @@ const About = () => {
             <p>
               Hi, I am <strong>Piyush Kaushik</strong>, a self taught{" "}
               <strong>frontend web developer</strong>. My developer alias is{" "}
-              <strong>kaushikDev</strong>. I have been learning web development
-              and writing code for the last <strong>One and a half</strong>{" "}
-              years.
+              <strong>kaushikDev</strong>. I have been writing code for the last{" "}
+              <strong>one and a half</strong> years.
             </p>
             <p>
               I use <strong>Adobe Xd</strong> to design my web apps and use{" "}
               <strong>JavaScript/React</strong> to bring them to life. I then
-              use <strong>SASS/CSS</strong> to make them beautiful. For writing
-              code I prefer <strong>VS Code</strong> and for maintaining the
-              code I use <strong>Github</strong>.
+              use <strong>SASS/CSS/UI Kits</strong> to make them beautiful. For
+              writing code I prefer <strong>VS Code</strong> and for maintaining
+              the code I use <strong>Github</strong>.
             </p>
             <p>
               Writing clean yet efficient and simple to understand code, is
